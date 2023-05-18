@@ -1,0 +1,124 @@
+.container{
+	/* border: 1px solid #2d2d2d; */
+}
+
+.watch{
+	width: 150px;
+	height: 150px;
+	box-shadow: 8px 8px 8px green,-2px -2px 3px green;
+	background: white;
+	border-radius: 50%;
+	border: 20px solid black;
+	transform-style: preserve-3d;
+	transform:perspective(1000px) rotateX(68deg);
+}
+.display{
+	margin: auto;
+    position: absolute;
+    left : -22px;
+    bottom : -10px;
+	width: 0px;
+	height: 10px;
+	background: rgba(0, 230, 64, .8);
+	border: 78px solid;
+	border-radius: 50%;
+    border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+
+.options {
+	position: absolute;
+	top: 30%;
+	left: 32%;
+	/* width: 180px;
+	height: 180px; */
+	z-index: 10;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transform: rotateX(300deg) translateZ(250px);
+	visibility: visible;
+}
+#bracelet img{
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	width: 980px;
+	
+	/* position: absolute;
+	width: 980px;
+	top: 16%;
+	left: 15%; */
+}
+
+
+/* .watch:hover .options{
+	visibility: visible;
+	transition-delay: .3s;
+} */
+
+/* .watch:hover .display{
+	transform: rotateZ(30deg);
+	transition: .3s;
+} */
+
+
+
+
+#shadow{
+	width: 158px;
+	height: 100px;
+	background: linear-gradient(rgba(0,230,64,.1),rgba(0,230,64,.5));
+	position: absolute;
+	top: -18%;
+	left: -16%;
+	border-bottom: transparent;
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	transform:perspective(150px) rotateX(320deg);
+	visibility: visible;
+	transition-delay: .3s;
+}
+
+/* 
+.watch:hover #shadow{
+	visibility: visible;
+	transition-delay: .3s;
+} */
+
+
+
+
+
+
+
+
+
+
+.headerText {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+ 
+  color: rgba(255,255,255,.70);
+}
+
+/* Animation */
+.headerText {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 700px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}

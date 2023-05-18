@@ -1,0 +1,55 @@
+.watchLinks{
+	width: 170px;
+	height: 170px;
+	z-index: 10;
+	box-shadow: 8px 8px 8px green,-2px -2px 3px green;
+	background: white;
+	border-radius: 50%;
+	border: 20px solid black;
+	transform-style: preserve-3d;
+	transform:perspective(1000px) rotateX(68deg);
+}
+.con{
+    overflow-y:  hidden !important;
+    overflow-x:  hidden !important;
+}
+.displayLinks{
+	margin: auto;
+    position: absolute;
+    top : -10%;
+    left : -10%;
+	width: 0px;
+	height: 10px;
+	background: rgba(0, 230, 64, .8);
+	border: 74px solid;
+	border-radius: 50%;
+    border-bottom-color: transparent;
+	border-top-color: transparent;
+}
+
+.optionsLinks {
+	position: absolute;
+	top: 20%;
+	left: 19%;
+	
+	z-index: 10;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transform: rotateX(300deg) translateZ(250px);
+	visibility: visible;
+}
+
+#shadowLinks{
+	width: 140px;
+	height: 100px;
+	background: linear-gradient(rgba(0,230,64,.1),rgba(0,230,64,.5));
+	position: absolute;
+	top: -18%;
+	left: -10%;
+	border-bottom: transparent;
+	transform-style: preserve-3d;
+	transform-origin: bottom;
+	transform:perspective(190px) rotateX(320deg);
+	visibility: visible;
+	transition-delay: .3s;
+}
